@@ -9,7 +9,7 @@ const temp = document.getElementById('temp');
 const skyCondition = document.getElementById('sky-condition');
 const kelvin = 273;
 
-const getWeather = button.addEventListener('click', 'touchstart', function(){
+const getWeather = button.addEventListener('click', function(){
     document.getElementById('button');
     fetch('https://api.openweathermap.org/data/2.5/weather?q='+ enterLocation.value +'&appid=677bc43da6e1bd6091619e71da09d7dd')
         .then(res => res.json())
